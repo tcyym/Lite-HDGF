@@ -24,7 +24,7 @@ class LiteHDGFOptions:
         self.parser.add_argument("--model_name",
                                  type=str,
                                  help="the name of the folder to save the model in",
-                                 default="l_ba0.2re")
+                                 default="liteHDGF")
         self.parser.add_argument("--split",
                                  type=str,
                                  help="which training split to use",
@@ -158,7 +158,8 @@ class LiteHDGFOptions:
         # LOADING optionss
         self.parser.add_argument("--load_weights_folder",
                                  type=str,
-                                 help="name of model to load")
+                                 help="name of model to load",
+                                 default=None")
         self.parser.add_argument("--models_to_load",
                                  nargs="+",
                                  type=str,
