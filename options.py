@@ -158,8 +158,7 @@ class LiteHDGFOptions:
         # LOADING optionss
         self.parser.add_argument("--load_weights_folder",
                                  type=str,
-                                 help="name of model to load",
-                                 default="/data/zhangyawei/ICCV1/tmp/l_ba0.2re/models/weights_78")
+                                 help="name of model to load")
         self.parser.add_argument("--models_to_load",
                                  nargs="+",
                                  type=str,
